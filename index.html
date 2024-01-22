@@ -38,10 +38,10 @@
 
           <!-- Gallery -->
           <div class="gallery">
-            <figure class="active">
+            <figure class="active" v-for="pic in pictures">
               <figcaption>
-                <h2>destinations.name</h2>
-                <h3>destinations.description</h3>
+                <h2>{{pic.name}}</h2>
+                <h3>{{pic.description}}</h3>
               </figcaption>
               <img src="img/01.jpg" alt="Svezia" />
             </figure>

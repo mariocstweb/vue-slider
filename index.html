@@ -40,8 +40,8 @@
           <div class="gallery">
             <figure class="active">
               <figcaption>
-                <h2>Svezia</h2>
-                <h3>Scandinavia's blend of nature and innovation.</h3>
+                <h2>destinations.name</h2>
+                <h3>destinations.description</h3>
               </figcaption>
               <img src="img/01.jpg" alt="Svezia" />
             </figure>
@@ -57,7 +57,11 @@
 
         <!-- Thumbnails -->
         <div id="thumbnails">
-          <img src="img/01.jpg" alt="Svezia" class="active" />
+          <img
+            v-for="pic in pictures"
+            :src="`img/${pic.image}`"
+            :alt="pic.name"
+          />
         </div>
 
         <!-- <div class="autoplay-controls">

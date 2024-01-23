@@ -13,7 +13,7 @@ const app = createApp({
     isFirstIndex() {
       return this.currentIndex === 0;
     },
-    isLastIIndex() {
+    isLastIndex() {
       return this.currentIndex === this.pictures.length - 1;
     },
   },
